@@ -1,6 +1,5 @@
 {
-  "name": "Example Addon",
+  "name": "Hypixel LevelHead",
   "uuid": "%uuid%",
-  "mainClass": "com.example.addon.ExampleAddon",
-  "transformerClass": "com.example.addon.ExampleAddonTransformer"
+  "mainClass": "de.pierreschwang.levelhead.LevelHeadAddon"
 }
