@@ -99,6 +99,12 @@ dependencies {
 jar {
     // Excludes the start file
     exclude("**/launch")
+
+    configurations.shade.each { dep ->
+        from(project.zipTree(dep)) {
+            exclude 'META-INF', 'META-INF/**'
+        }
+    }
 }
 
 task downloadAPI(type: Download) {
